@@ -266,7 +266,7 @@ public class PolarityBasic {
                     c0+=1;
                     listtweets.remove(currentTweet);
                 }
-                if(c0==1){
+                if(c0==20){
                     w0.close();
                     f0+=1;
                     //neg = new File("/home/bernardo/NetBeansProjects/Storm/test/0/testNegative"+String.valueOf(f0)+".txt");
@@ -275,7 +275,7 @@ public class PolarityBasic {
                     w0 = new FileWriter("/home/bernardo/NetBeansProjects/Storm/train/0/trainNegative"+String.valueOf(f0)+".txt");
                     c0=0;
                 }
-                if(c2==1){
+                if(c2==20){
                     w2.close();
                     f2+=1;
                     //neu = new File("/home/bernardo/NetBeansProjects/Storm/test/2/testNeutral"+String.valueOf(f2)+".txt");
@@ -286,7 +286,7 @@ public class PolarityBasic {
                     c2=0;
                 }
                 
-                if(c4==1){
+                if(c4==20){
                     w4.close();
                     f4+=1;
                     //pos = new File("/home/bernardo/NetBeansProjects/Storm/test/4/testPositive"+String.valueOf(f4)+".txt");
@@ -329,21 +329,21 @@ public class PolarityBasic {
     
     public static void main(String[] args) {
         
-    
+    /*
         try {
            new PolarityBasic(args).run();
         } catch (Throwable t) {
             System.out.println("Thrown: " + t);
             t.printStackTrace(System.out);
         }
-       /*
+       */
         try{
             new PolarityBasic(args).createDataset();
         } catch (Throwable t) {
             System.out.println("Thrown: " + t);
             t.printStackTrace(System.out);
         }
-*/
+
         /*
         ConfigurationBuilder configurationBuilder = new ConfigurationBuilder();
         configurationBuilder.setDebugEnabled(true)
